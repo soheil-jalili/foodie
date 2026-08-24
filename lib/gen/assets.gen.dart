@@ -14,6 +14,10 @@ import 'package:flutter/widgets.dart';
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/first-onboarding-hero-image.png
+  AssetGenImage get firstOnboardingHeroImage =>
+      const AssetGenImage('assets/images/first-onboarding-hero-image.png');
+
   /// File path: assets/images/food-splash.png
   AssetGenImage get foodSplash =>
       const AssetGenImage('assets/images/food-splash.png');
@@ -22,7 +26,7 @@ class $AssetsImagesGen {
   String get logo => 'assets/images/logo.svg';
 
   /// List of all assets
-  List<dynamic> get values => [foodSplash, logo];
+  List<dynamic> get values => [firstOnboardingHeroImage, foodSplash, logo];
 }
 
 abstract final class Assets {
