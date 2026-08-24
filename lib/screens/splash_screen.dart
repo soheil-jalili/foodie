@@ -22,7 +22,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
       Navigator.of(
         context,
-      ).push(MaterialPageRoute(builder: (context) => FirstOnboarding()));
+      ).pushReplacement(MaterialPageRoute(builder: (context) => FirstOnboarding()));
     });
   }
 

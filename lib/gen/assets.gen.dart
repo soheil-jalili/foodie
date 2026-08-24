@@ -25,8 +25,17 @@ class $AssetsImagesGen {
   /// File path: assets/images/logo.svg
   String get logo => 'assets/images/logo.svg';
 
+  /// File path: assets/images/second-onboarding-hero-image.png
+  AssetGenImage get secondOnboardingHeroImage =>
+      const AssetGenImage('assets/images/second-onboarding-hero-image.png');
+
   /// List of all assets
-  List<dynamic> get values => [firstOnboardingHeroImage, foodSplash, logo];
+  List<dynamic> get values => [
+    firstOnboardingHeroImage,
+    foodSplash,
+    logo,
+    secondOnboardingHeroImage,
+  ];
 }
 
 abstract final class Assets {
