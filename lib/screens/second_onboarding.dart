@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:foodie/constants/colors/app_colors.dart';
 import 'package:foodie/constants/text_styles/text_styles.dart';
 import 'package:foodie/gen/assets.gen.dart';
+import 'package:foodie/screens/signin_screen.dart';
 import 'package:foodie/widgets/horizental_line.dart';
 import 'package:foodie/widgets/primary_button.dart';
 
@@ -54,7 +55,11 @@ class SecondOnboarding extends StatelessWidget {
 
               Spacer(),
               PrimaryButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) => SigninScreen()),
+                  );
+                },
                 title: 'Next',
                 width: 158,
                 height: 50,
